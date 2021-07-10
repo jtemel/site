@@ -1,0 +1,31 @@
+
+.orgAvatar {
+  object-fit: contain;
+}
+
+.job {
+  margin-bottom: 15px;
+}
+
+.cardCont {
+  padding: 0;
+  padding-top: 0;
+}
+
+.list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0;
+}
+
+.time {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}

@@ -135,7 +135,10 @@ export default class Experience extends React.Component {
               <List className={styles.list} disablePadding>
                 {item.info.map((i) => (
                   <ListItem className={styles.listItem} key={i} disableGutters dense>
-                    <ListItemText primary={`${i}.`} />
+                    <ListItemText
+                      primary={`${i}.`}
+                      primaryTypographyProps={{variant: "body1"}}
+                    />
                   </ListItem>
                 ))}
               </List>

@@ -5,6 +5,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.js';
 import Hobbies from './components/Hobbies/Hobbies.js';
 import Experience from './components/Experience/Experience.js';
+import Research from './components/Research/Research.js';
 import Footer from './components/Footer/Footer.js';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/experience" component={Experience} />
+        <Route exact path="/research" component={Research} />
         <Route exact path="/hobbies" component={Hobbies} />
       </Switch>
       <Footer />
