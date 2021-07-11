@@ -27,10 +27,13 @@ export default class Experience extends React.Component {
   render() {
     const nthirtyAction = (
       <Grid container justify="center" alignItems="center" className={styles.time}>
-        <Grid item  xs={6}>
+        <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">April 1 2020</Typography>
         </Grid>
-        <Grid item  xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">Present</Typography>
         </Grid>
       </Grid>
@@ -38,10 +41,13 @@ export default class Experience extends React.Component {
 
     const verityAction = (
       <Grid container justify="center" alignItems="center" className={styles.time}>
-        <Grid item  xs={6}>
+        <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">June 1 2019</Typography>
         </Grid>
-        <Grid item  xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">May 30 2020</Typography>
         </Grid>
       </Grid>
@@ -49,19 +55,25 @@ export default class Experience extends React.Component {
 
     const uoftAction = (
       <Grid container justify="center" alignItems="center" className={styles.time}>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">Sept 6 2020</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2"> May 1 2021</Typography>
         </Grid>
         <Grid item xs={12}>
           <Divider />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">Sept 6 2018</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">May 1 2019</Typography>
         </Grid>
       </Grid>

@@ -26,10 +26,13 @@ export default class Research extends React.Component {
   render() {
     const llvmTime = (
       <Grid container justify="center" alignItems="center" className={styles.time}>
-        <Grid item xs={6}>
-          <Typography className={mainStyles.cardText} variant="body2">May 1 2021</Typography>
+        <Grid item xs={5}>
+          <Typography className={mainStyles.cardText} variant="body2">May 2021</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">Present</Typography>
         </Grid>
       </Grid>
@@ -37,10 +40,13 @@ export default class Research extends React.Component {
 
     const miningTime = (
       <Grid container justify="center" alignItems="center" className={styles.time}>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">September 2018</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item  xs={2}>
+          <Typography className={mainStyles.cardText} variant="body2">-</Typography>
+        </Grid>
+        <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">May 2019</Typography>
         </Grid>
       </Grid>
@@ -105,8 +111,12 @@ export default class Research extends React.Component {
                   </ListItem>
                 ))}
               </List>
-              <Typography className={styles.time} variant="body1">
-                You can view the paper <Link href={item.pdf} target="blank"> here </Link>
+              <Typography style={{textAlign: 'center'}} variant="body1">
+                {
+                  item.pdf &&
+                  <Link href={item.pdf} target="blank">View Paper</Link>
+                  
+                }
               </Typography>
             </CardContent>
           </Card>
