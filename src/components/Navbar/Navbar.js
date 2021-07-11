@@ -20,7 +20,7 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 
 import styles from './Navbar.module.css';
 
-import logo from '../../images/33logo-emp.png';
+import logo from '../../images/logo_transparent_mid.png';
 
 export default class Navbar extends React.Component {
   constructor(props) {

@@ -7,7 +7,6 @@
   background-color: #fafafa !important;
   padding: 0;
   width: 100%;
-  display: flex;
   position: fixed;
   top: 0;
   height: 70px;
@@ -15,7 +14,7 @@
 
 .logo {
   margin: 0 auto;
-  height: 69px;
+  height: 30px;
 }
 
 .menuDrawer {
