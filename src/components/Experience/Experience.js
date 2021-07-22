@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
   CardHeader,
-  CardMedia,
   Container,
   Divider,
   Grid,
@@ -100,6 +99,7 @@ export default class Experience extends React.Component {
         action: verityAction,
         info: [
           "Added functionality to low-level C++ libraries for threading and inter-process communciation",
+          "Wrote scripts for automating process such as flashing nightly builds onto various drones",
           "Added a streaming library using gstreamer",
           "Configured the embedded Linux ecosystem with ptxdist",
           "Researched, implemented and tested a core affinity library in C++ for pinning and isolating process on the drone",
@@ -113,7 +113,11 @@ export default class Experience extends React.Component {
         loc: "Toronto, Canada",
         action: uoftAction,
         info: [
-          ""
+          "Courses: Data Structures and Analysis, Linear Algebra, Systems Programming (2 sections), Computational Theory and Analysis (2 sections), Introduction to Programming",
+          "Worked directly with the Lead Course Instructor and other teaching assistants to deliver content tailored for students both in-person and remotely",
+          "Created, graded and presented content to the students in a variety of disciplines including linera algebra, computer science, statistics and system programming",
+          "Held open office hours weekly to assistant students in a one-to-one manner",
+          "Invigilated examinations, adminstered quizzes and tests and graded assignments",
         ]
       }
     ];
