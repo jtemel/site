@@ -8,40 +8,37 @@ import {
   Typography
 } from '@material-ui/core';
 
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import styles from './Footer.module.css';
 
 export default class Footer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Container disableGutters>
         <div className={styles.footer}>
           <div className={styles.footerLinks}>
             <Grid container justify="center" alignItems="center" spacing={0}>
-              <Grid item xs={4} >
-                <a href="https://www.instagram.com/thirtythreecollection" target="_blank"> 
-                  <IconButton className={styles.cartButton} aria-label="instagram">
-                    <InstagramIcon />
+              <Grid item xs={6} >
+                <a
+                  href="https://ca.linkedin.com/in/jonathon-temelkovski"
+                  target="_blank"
+                  rel="noreferrer"
+                > 
+                  <IconButton className={styles.cartButton} aria-label="linkedin">
+                    <LinkedInIcon />
                   </IconButton>
                 </a>
               </Grid>
-              <Grid item xs={4} >
-                <a href="https://www.facebook.com/ThirtyThreeCollectionCandles" target="_blank"> 
-                  <IconButton className={styles.cartButton} aria-label="instagram">
-                    <FacebookIcon />
-                  </IconButton>
-                </a>
-              </Grid>
-              <Grid item xs={4} >
-                <a href="https://www.facebook.com/ThirtyThreeCollectionCandles" target="_blank"> 
-                  <IconButton className={styles.cartButton} aria-label="instagram">
-                    <FacebookIcon />
+              <Grid item xs={6} >
+                <a
+                  href="https://github.com/jtemel/"
+                  target="_blank"
+                  rel="noreferrer"
+                > 
+                  <IconButton className={styles.cartButton} aria-label="github">
+                    <GitHubIcon />
                   </IconButton>
                 </a>
               </Grid>
