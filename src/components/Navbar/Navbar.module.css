@@ -1,4 +1,4 @@
-.root {
+root {
   flex-grow: 1;
 }
 
@@ -9,7 +9,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 60px;
 }
 
 .logo {

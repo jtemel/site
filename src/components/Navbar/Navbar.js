@@ -12,7 +12,6 @@ import {
   ListItem,
   ListItemText,
   Toolbar,
-  Typography
 } from '@material-ui/core'; 
 
 import MenuIcon from '@material-ui/icons/Menu';
@@ -72,6 +71,11 @@ export default class Navbar extends React.Component {
                 </ListItem>
               </Link>
               <Divider/>
+              <Link className={styles.link} to="/education">
+                <ListItem button>
+                  <ListItemText primary="Education"/>
+                </ListItem>
+              </Link>
               <Link className={styles.link} to="/experience">
                 <ListItem button>
                   <ListItemText primary="Experience"/>
