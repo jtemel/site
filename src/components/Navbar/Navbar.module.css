@@ -3,8 +3,7 @@ root {
 }
 
 .appBar {
-  box-shadow: none !important;
-  background-color: #fafafa !important;
+  background-color: #fefefe !important;
   padding: 0;
   width: 100%;
   position: fixed;

@@ -8,3 +8,12 @@
   padding-bottom: 10px;
   width: 100%;
 }
+
+.job {
+  margin-bottom: 15px;
+}
+
+.cardCont {
+  padding: 0;
+  padding-top: 0;
+}

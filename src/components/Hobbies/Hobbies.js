@@ -3,6 +3,7 @@ import React from 'react';
 
 import {
   Card,
+  CardContent,
   CardMedia,
   Container,
   Grid,
@@ -45,63 +46,72 @@ export default class Hobbies extends React.Component {
         <Typography className={mainStyles.title} variant="h4">
           Music
         </Typography>
-        <Typography className={mainStyles.subtitle} variant="h5">
-          Guitar Builds
-        </Typography>
-        <Typography className={mainStyles.text} variant="body1">
-          Building and painting guitars has become a new hobby of mine. Starting from a raw wood body and
-          neck, I would first treat, patch and sand the wood until smooth (excluding the fret board). Once
-          satisfied, the painting begins in the following order: sanding sealer, primer, color coats, clear coat.
-          This procress consumed the longest time period, spanning over two weeks of daily coats and
-          the occasional wet sanding. As the final coat dries, I would start prepping the parts to be mounted
-          into the body and headstock. The neck is then either bolted or glued into the body. Electronics are soldered together and tested before being mounted into the body.
-          The final step is to string the instrument and make the necassiarly adjustments such as neck clearance,
-          action height and fixing the intonation.
-        </Typography>
-        <Container className={styles.imgList} maxWidth="lg">
-          <Grid container alignItems="stretch" spacing={1}>
-            {imgData.map((item) => (
-              <Grid key={item.alt} item xs={12} sm={item.cols > 1 ? 12 : 6} md={3}>
-                <Card>
-                  <CardMedia image={item.img} style={{height: 400, paddingBottom: '40.25%'}}/>
-                </Card>
+        <Card className={styles.job}>
+          <CardContent className={styles.cardCont}>
+            <Typography className={mainStyles.subtitle} variant="h5">
+              Guitar Builds
+            </Typography>
+            <Typography className={mainStyles.text} variant="body1">
+              Building and painting guitars has become a new hobby of mine. Starting from a raw wood body and
+              neck, I would first treat, patch and sand the wood until smooth (excluding the fret board). Once
+              satisfied, the painting begins in the following order: sanding sealer, primer, color coats, clear coat.
+              This procress consumed the longest time period, spanning over two weeks of daily coats and
+              the occasional wet sanding. As the final coat dries, I would start prepping the parts to be mounted
+              into the body and headstock. The neck is then either bolted or glued into the body. Electronics are soldered together and tested before being mounted into the body.
+              The final step is to string the instrument and make the necassiarly adjustments such as neck clearance,
+              action height and fixing the intonation.
+            </Typography>
+            <Container className={styles.imgList} maxWidth="lg">
+              <Grid container alignItems="stretch" spacing={1}>
+                {imgData.map((item) => (
+                  <Grid key={item.alt} item xs={12} sm={item.cols > 1 ? 12 : 6} md={3}>
+                    <Card>
+                      <CardMedia image={item.img} style={{height: 400, paddingBottom: '40.25%'}}/>
+                    </Card>
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
-        </Container>
-        <Typography className={mainStyles.subtitle} variant="h5">
-          Recordings
-        </Typography>
-        <Typography className={mainStyles.text} variant="body1">
-          I like to record and play music. I started self-teaching guitar and drums from a young age,
-          and recently started to record myself within Abelton Live.
-          You can find the audio tracks (covers) of some of my recent recordings below.
-        </Typography>
-        <Typography className={mainStyles.text} variant="body1">
-          Note: These are rough mixes and demo tracks, so they are weakly mastered.
-        </Typography>
-        <Container disableGutters>
-          {audioData.map((item) => (
-            <div>
-              <Typography className={styles.trackTitle} variant="subtitle">
-                {item.name} 
-              </Typography>
-              <audio className={styles.audioTrack} controls src={item.audio}>
-                {item.name}
-              </audio>
-            </div>
-          ))}
-        </Container>
-        <Typography className={mainStyles.text} variant="body1">
-        </Typography>
-
+            </Container>
+          </CardContent>
+        </Card>
+        <Card className={styles.job}>
+          <CardContent className={styles.cardCont}>
+            <Typography className={mainStyles.subtitle} variant="h5">
+              Recordings
+            </Typography>
+            <Typography className={mainStyles.text} variant="body1">
+              I like to record and play music. I started self-teaching guitar and drums from a young age,
+              and recently started to record myself within Abelton Live.
+              You can find the audio tracks (covers) of some of my recent recordings below.
+            </Typography>
+            <Typography className={mainStyles.text} variant="body1">
+              Note: These are rough mixes and demo tracks, so they are weakly mastered.
+            </Typography>
+            <Container disableGutters>
+              {audioData.map((item) => (
+                <div>
+                  <Typography className={styles.trackTitle} variant="subtitle">
+                    {item.name} 
+                  </Typography>
+                  <audio className={styles.audioTrack} controls src={item.audio}>
+                    {item.name}
+                  </audio>
+                </div>
+              ))}
+            </Container>
+          </CardContent>
+        </Card>
         <Typography className={mainStyles.title} style={{paddingTop: "20px"}} variant="h4">
           Skateboarding
         </Typography>
-        <Typography className={mainStyles.text} variant="body1">
-          I started stakeboarding when I was young but stopped some years after. I had picked
-          it up again while I was in Zurich and have been skating almost daily since.
-        </Typography>
+        <Card className={styles.job}>
+          <CardContent className={styles.cardCont}>
+            <Typography className={mainStyles.text} variant="body1">
+              I started stakeboarding when I was young but stopped some years after. I had picked
+              it up again while I was in Zurich and have been skating almost daily since.
+            </Typography>
+          </CardContent>
+        </Card>
       </Container>
     );
   }

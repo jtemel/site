@@ -1,3 +1,12 @@
+.job {
+  margin-bottom: 15px;
+}
+
+.cardCont {
+  padding: 0;
+  padding-top: 0;
+}
+
 .sendButton {
   background-color: #f2f2f2 !important;
   height: 40px;
