@@ -25,7 +25,7 @@ import styles from './Experience.module.css';
 export default class Experience extends React.Component {
   render() {
     const nthirtyAction = (
-      <Grid container justify="center" alignItems="center" className={styles.time}>
+      <Grid container justifyContent="center" alignItems="center" className={styles.time}>
         <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">April 1 2020</Typography>
         </Grid>
@@ -39,7 +39,7 @@ export default class Experience extends React.Component {
     );
 
     const verityAction = (
-      <Grid container justify="center" alignItems="center" className={styles.time}>
+      <Grid container justifyContent="center" alignItems="center" className={styles.time}>
         <Grid item  xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">June 1 2019</Typography>
         </Grid>
@@ -53,7 +53,7 @@ export default class Experience extends React.Component {
     );
 
     const uoftAction = (
-      <Grid container justify="center" alignItems="center" className={styles.time}>
+      <Grid container justifyContent="center" alignItems="center" className={styles.time}>
         <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">Sept 6 2020</Typography>
         </Grid>
@@ -128,7 +128,7 @@ export default class Experience extends React.Component {
           Experience
         </Typography>
         {experienceData.map((item) => (
-          <Card className={styles.job} id={item.name}>
+          <Card className={styles.job} id={item.name} key={item.name}>
             <CardHeader
               avatar={
                 <Avatar
@@ -144,7 +144,7 @@ export default class Experience extends React.Component {
               title={item.name}
               titleTypographyProps={{variant: "h6"}}
               subheader={item.company}
-              subheaderTypographyProps={{variant: "subtitle"}}
+              subheaderTypographyProps={{variant: "subtitle1"}}
             />
             <CardContent className={styles.cardCont}>
               {item.action}

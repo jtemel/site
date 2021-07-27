@@ -8,15 +8,13 @@ import {
 } from '@material-ui/core';
 
 import mainStyles from '../../index.module.css';
+
+// eslint-disable-next-line
 import styles from './Portfolio.module.css';
 
 import PortfolioItem from './PortfolioItem/PortfolioItem.js';
 
 export default class Portfolio extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const projects = [
       {
@@ -97,7 +95,7 @@ export default class Portfolio extends React.Component {
         <Grid container spacing={4}>
           {
             projects.map((e, i) => (
-              <Grid item xs={12} sm={6} id={i}>
+              <Grid item xs={12} sm={6} key={i}>
                 <PortfolioItem item={e} />
               </Grid>
             ))

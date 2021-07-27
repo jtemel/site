@@ -2,13 +2,10 @@
 import React from 'react';
 
 import {
-  Avatar,
   Card,
   CardContent,
   CardHeader,
-  CardMedia,
   Container,
-  Divider,
   Grid,
   Typography,
   Link,
@@ -25,7 +22,7 @@ import benchmarkPdf from '../../pdf/benchmark.pdf';
 export default class Research extends React.Component {
   render() {
     const llvmTime = (
-      <Grid container justify="center" alignItems="center" className={styles.time}>
+      <Grid container justifyContent="center" alignItems="center" className={styles.time}>
         <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">May 2021</Typography>
         </Grid>
@@ -39,7 +36,7 @@ export default class Research extends React.Component {
     );
 
     const miningTime = (
-      <Grid container justify="center" alignItems="center" className={styles.time}>
+      <Grid container justifyContent="center" alignItems="center" className={styles.time}>
         <Grid item xs={5}>
           <Typography className={mainStyles.cardText} variant="body2">September 2018</Typography>
         </Grid>
@@ -55,9 +52,13 @@ export default class Research extends React.Component {
     const experienceData = [
       {
         name: "LLVM Compiler Regression",
-        supervisor: "Andi LastName",
+        supervisor: "Andi Bergen",
         time: llvmTime,
         info: [
+          {
+            title: "",
+            info: "To be added.."
+          }
         ],
       }, {
         name: "Mining Online Learning Activities: Benchmarking CS1 Exercises",
@@ -88,12 +89,12 @@ export default class Research extends React.Component {
           Research
         </Typography>
         {experienceData.map((item) => (
-          <Card className={styles.job} id={item.name}>
+          <Card className={styles.job} id={item.name} key={item.name}>
             <CardHeader
               title={item.name}
               titleTypographyProps={{variant: "h5"}}
               subheader={`Supervisor: ${item.supervisor}`}
-              subheaderTypographyProps={{variant: "subtitle"}}
+              subheaderTypographyProps={{variant: "subtitle1"}}
             />
             <CardContent className={styles.cardCont}>
               <Typography className={styles.time} variant="body2">
@@ -101,7 +102,7 @@ export default class Research extends React.Component {
               </Typography>
               <List className={styles.list} disablePadding>
                 {item.info.map((i) => (
-                  <ListItem className={styles.listItem} key={i} disableGutters dense>
+                  <ListItem className={styles.listItem} key={i.info} disableGutters dense>
                     <ListItemText
                       primary={i.title}
                       primaryTypographyProps={{variant: "h6"}}
